@@ -57,11 +57,11 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="text-center">
-                                <h3>SMART BUSINESS SOLUTIONS!</h3>
+                                <h3>Lead people with what they want.</h3>
                             </div>
                         </div>
                     </div>
-                    <h4>PATROS – Free HTML5/CSS3 Responsive Website Template.</h4>
+                    <h4>Think like a publisher, not a marketer.</h4>
                 </div>
             </li>
             <li><span>image2</span>
@@ -69,11 +69,11 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="text-center">
-                                <h3>PREMIUM CREATIVE CONTENT!</h3>
+                                <h3>Lead with what they’ve already said.</h3>
                             </div>
                         </div>
                     </div>
-                    <h4>Lorem Ipsum is simply dummy text of typesetting industry.</h4>
+                    <h4>Think like a publisher, not a marketer.</h4>
                 </div>
             </li>
             <li><span>image3</span>
@@ -81,11 +81,11 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="text-center">
-                                <h3>UNIQUE DESIGN!</h3>
+                                <h3>Lead people from where they’re at.</h3>
                             </div>
                         </div>
                     </div>
-                    <h4>Lorem Ipsum is simply dummy text of typesetting industry.</h4>
+                    <h4>Think like a publisher, not a marketer.</h4>
                 </div>
             </li>
             <li><span>Image 04</span>
@@ -93,35 +93,11 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="text-center">
-                                <h3>WEB AND GRAPHICS DESIGN</h3>
+                                <h3>Lead them with the things that concern them.</h3>
                             </div>
                         </div>
                     </div>
-                    <h4>Lorem Ipsum is simply dummy text of typesetting industry.</h4>
-                </div>
-            </li>
-            <li><span>Image 05</span>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center">
-                                <h3>DIGITAL MARKETING SOLUTIONS</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <h4>Lorem Ipsum is simply dummy text of typesetting industry.</h4>
-                </div>
-            </li>
-            <li><span>Image 06</span>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center">
-                                <h3>SEARCH ENGINE OPTIMIZATION!</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <h4>Lorem Ipsum is simply dummy text of typesetting industry.</h4>
+                    <h4>Think like a publisher, not a marketer.</h4>
                 </div>
             </li>
         </ul>
@@ -147,8 +123,7 @@
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem
                                     Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                                    <span
-                                        class="color-elements">essentially unchanged.</span>
+                                    <span class="color-elements">essentially unchanged.</span>
                                 </p>
                             </div>
                         </div>
@@ -511,8 +486,8 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Google Map -->
-    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true&amp;libraries=places"></script>
 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
     <!-- Portfolio -->
     <script src="js/jquery.quicksand.js"></script>
 
@@ -657,15 +632,11 @@
         var longitude;
 
         function inicializemap() {
-            latitude = 41.3349509;
-            longitude = 19.8217028;
+            latitude = 30.0544498;
+            longitude = 31.202549599999998;
 
             var egglabs = new google.maps.LatLng(latitude, longitude);
-            var egglabs1 = new google.maps.LatLng(43.0630171, 89.2296082);
-            var egglabs2 = new google.maps.LatLng(13.0630171, 80.2296082);
-
-
-            var image = new google.maps.MarkerImage('images/marker.png', new google.maps.Size(84, 56), new google.maps.Point(0, 0), new google.maps.Point(42, 56));
+            var image = new google.maps.MarkerImage('images/marker.png', new google.maps.Size(84, 56), new google.maps.Point(0, 0));
             var mapCoordinates = new google.maps.LatLng(latitude, longitude);
             var mapOptions = {
                 backgroundColor: '#ffffff',
@@ -792,22 +763,7 @@
                 draggable: false,
                 title: 'ATIS1'
             });
-            marker = new google.maps.Marker({
-                position: egglabs1,
-                raiseOnDrag: false,
-                icon: image,
-                map: map,
-                draggable: false,
-                title: 'ATIS2'
-            });
-            marker = new google.maps.Marker({
-                position: egglabs2,
-                raiseOnDrag: false,
-                icon: image,
-                map: map,
-                draggable: false,
-                title: 'ATIS3'
-            });
+
             google.maps.event.addListener(map, 'zoom_changed', function() {
                 var center = map.getCenter();
                 google.maps.event.trigger(map, 'resize');
